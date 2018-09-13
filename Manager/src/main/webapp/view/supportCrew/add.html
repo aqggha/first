@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>房屋系统 - 合同信息添加</title>
+	<link rel="stylesheet" href="../../../css/main.css">
+	<link rel="stylesheet" href="../../../lib/font-awesome/css/font-awesome.css">
+	<script src="/js/jquery-3.3.1.min.js"></script>
+	<script src="/js/supporter/add.js"></script>
+</head>
+<body>
+<div class="box">
+	<h3>添加合同信息</h3>
+	<form action="" method="post">
+		<table class="form-table">
+			<tr>
+				<td>合同号</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" id="supporterNumber" placeholder="填写合同号">
+				</td>
+			</tr>
+			<tr>
+				<td>租户信息</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" id="renterInfo" placeholder="填写租户信息">
+				</td>
+			</tr>
+			<tr>
+				<td>房屋信息</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" id="houseInfo"  placeholder="房屋信息">
+				</td>
+			</tr>
+			<tr>
+				<td>房租总额</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" id="price" placeholder="房租总额">
+				</td>
+			</tr>
+			<tr>
+				<td>付款方式</td>
+				<td colspan="3" class="control">
+					<select id="payMethod">
+						<option value="现金">现金</option>
+						<option value="支付宝">微信</option>
+						<option value="其他">其他</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>押金</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" id="deposit" placeholder="押金">
+				</td>
+			</tr>
+			<tr>
+				<td>付款期数</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" id="payPeriods" placeholder="付款期数">
+				</td>
+			</tr>
+			<tr>
+				<td>签署人</td>
+				<td colspan="3" class="control">
+					<input type="text" name="" id="people" placeholder="签署人">
+				</td>
+			</tr>
+
+			<tr>
+				<td>合同状态</td>
+				<td colspan="3" class="control">
+					<select id="status">
+						<option value="未生效">未生效</option>
+						<option value="已生效">已生效</option>
+						<option value="其他">其他</option>
+					</select>
+				</td>
+			</tr>
+
+		</table>
+		<div class="buttons">
+			<input class="btn btn-primary va-bottom"  type="submit" value="保存" onclick="insert()">&nbsp;&nbsp;
+			<a class="btn btn-default" href="javascript:history.go(-1)">返回</a>
+		</div>
+	</form>
+</div>
+</body>
+</html>

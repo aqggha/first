@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>房屋系统 - 房屋租户添加</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../lib/font-awesome/css/font-awesome.css">
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/renter/addLease.js"></script>
+</head>
+<body>
+<div class="box">
+    <h3>添加租户信息</h3>
+    <form action="" method="post">
+        <table class="form-table">
+
+            <tr>
+                <td>租户名字</td>
+                <td colspan="3" class="control">
+                    <input type="text" name="" id="name" placeholder="租户名字">
+                </td>
+            </tr>
+            <tr>
+                <td>租户手机号</td>
+                <td colspan="3" class="control">
+                    <input type="text" name="" id="phoneNumber" placeholder="租户手机号">
+                </td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td colspan="3" class="control">
+                    <input type="text" name="" id="sex"  placeholder="性别">
+                </td>
+            </tr>
+            <tr>
+                <td>籍贯</td>
+                <td colspan="3" class="control">
+                    <input type="text" name="" id="nativePlace" placeholder="籍贯">
+                </td>
+            </tr>
+            <tr>
+                <td>身份证号</td>
+                <td colspan="3" class="control">
+                    <input type="text" name="" id="idNumber" placeholder="身份证号">
+                </td>
+            </tr>
+        </table>
+        <div class="buttons">
+            <input class="btn btn-primary va-bottom"  type="submit" value="保存" onclick="insert()">&nbsp;&nbsp;
+            <a class="btn btn-default" href="javascript:history.go(-1)">返回</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>

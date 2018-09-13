@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>房屋系统 -合同添加</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../lib/font-awesome/css/font-awesome.css">
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/lease/addLease.js"></script>
+</head>
+<body>
+<div class="box">
+    <h3>添加租户信息</h3>
+    <form action="" method="post">
+        <table class="form-table">
+
+            <tr>
+                <td>房屋信息</td>
+                <td colspan="3" class="control">
+                    <input type="text" name="" id="houseId" placeholder="房屋信息">
+                </td>
+            </tr>
+            <tr>
+                <td>租户信息</td>
+                <td colspan="3" class="control">
+                    <input type="text" name="" id="renterId" placeholder="租户信息">
+                </td>
+            </tr>
+            <tr>
+                <td>首付</td>
+                <td colspan="3" class="control">
+                    <input type="text" name="" id="amount"  placeholder="首付">
+                </td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td colspan="3" class="control">
+                    <input type="text" name="" id="remark" placeholder="备注">
+                </td>
+            </tr>
+
+        </table>
+        <div class="buttons">
+            <input class="btn btn-primary va-bottom"  type="submit" value="保存" onclick="insert()">&nbsp;&nbsp;
+            <a class="btn btn-default" href="javascript:history.go(-1)">返回</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>

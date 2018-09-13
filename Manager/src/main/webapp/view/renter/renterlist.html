@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XX系统 - 租户信息管理</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../lib/font-awesome/css/font-awesome.css">
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <!--<script src="/js/renter.js"></script>-->
+    <script src="/js/renter/list.js"></script>
+</head>
+<body>
+<div class="box">
+    <h3>租户信息管理</h3>
+    <div class="actions">
+        <div>
+            <a class="btn btn-primary" href="addRenter.html">添加租户信息</a>
+        </div>
+    </div>
+
+    <table id="renterData" class="list">
+        <tr>
+            <th>序号</th>
+            <th>租户名字</th>
+            <th>租户手机号</th>
+            <th>性别</th>
+            <th>籍贯</th>
+            <th>身份证号</th>
+            <th>添加时间</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>张三</td>
+            <td>123456789</td>
+            <td>男</td>
+            <td>河南省郑州市经开八大街与南三环交叉口</td>
+            <td>2018-08-30 19:44:21</td>
+            <td>4110154556448</td>
+            <td>
+                <a class="fa fa-info" title="详情" href="detail.html"></a>
+                &nbsp;&nbsp;
+                <a class="fa fa-pencil" title="编辑" href="edit.html"></a>
+                &nbsp;&nbsp;
+                <a class="fa fa-remove" title="删除" href="#" onclick="confirmDelete(1)"></a>
+            </td>
+        </tr>
+    </table>
+    <div class="pager-info">
+        <div id="renterInfo">共有 1 条记录，第 1/1 页 </div>
+        <div>
+            <ul class="pagination">
+                <li class="paginate_button previous disabled }">
+                    <a href="#" onclick="prePage()">上一页</a>
+                </li>
+                <li class="paginate_button active"><a href="#" id="currentPage">1</a></li>
+                <li class="paginate_button next disabled">
+                    <a href="#" onclick="nextPage()">下一页</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="../../lib/jquery/jquery.js"></script>
+<script>
+    function confirmDelete(id){
+        if (confirm("确定要删除码？")) {
+            alert('发送删除请求，刷新页面（不要异步）');
+        }
+        return false;
+    }
+</script>
+</body>
+</html>

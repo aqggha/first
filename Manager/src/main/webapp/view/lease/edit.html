@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XX系统 - 租户信息更新</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../lib/font-awesome/css/font-awesome.css">
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/lease/edit.js"></script>
+</head>
+<body>
+<div class="box">
+    <h3>添加租户信息</h3>
+    <form action="" method="post">
+        <table class="form-table">
+            <!--隐藏域 后台能看到 前台看不到-->
+            <input type="hidden" id="id" value="">
+
+            <tr>
+                <td>房屋信息</td>
+                <td colspan="3" class="control">
+                    <input type="text" name="" placeholder="房屋信息" value="2" id="houseId">
+                </td>
+            </tr>
+            <tr>
+                <td>租户信息</td>
+                <td colspan="3" class="control">
+                    <input type="text" name="" placeholder="租户信息" value="18" id="renterId">
+                </td>
+            </tr>
+            <tr>
+                <td>首付</td>
+                <td colspan="3" class="control">
+                    <input type="text" name="" placeholder="首付" value="3000" id="amount">
+                </td>
+            </tr>
+            <tr>
+                <td>备注</td>
+                <td colspan="3" class="control">
+                    <input type="text" name="" placeholder="备注" value="舒适" id="remark">
+                </td>
+            </tr>
+
+        </table>
+        <div class="buttons">
+            <input class="btn btn-primary va-bottom" type="submit" value="保存" onclick="save()">&nbsp;&nbsp;
+            <a class="btn btn-default" href="javascript:history.go(-1)">返回</a>
+        </div>
+    </form>
+</div>
+</body>
+</html>
